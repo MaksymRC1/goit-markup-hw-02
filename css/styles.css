@@ -26,17 +26,11 @@ header {
   border-bottom: 1px solid var(--cornflower);
   background: var(--white);
 }
-.linkweb {
-  font-family: var(--second-family);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--navy-blue);
-}
+
 .linkwebheader {
   font-weight: 700;
   font-size: 18px;
-
-  /* line-height: 21px; */
+  font-family: var(--second-family);
   line-height: 1.16667;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -51,7 +45,7 @@ header {
   text-transform: uppercase;
   color: var(--iris);
 }
-nav a {
+.nav-a {
   font-weight: 500;
   font-size: 16px;
 
@@ -61,29 +55,22 @@ nav a {
   color: var(--navy-blue);
 }
 address {
-  font-weight: 400;
-  font-size: 16px;
-
-  /* line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
 }
-address a {
+.contacts {
   color: var(--slate);
 }
-address a:hover,
-address a:focus {
+.contacts:hover,
+.contacts:focus {
   color: var(--ocean);
 }
 a:hover,
 a:focus {
   color: var(--ocean);
 }
-a,
-nav a,
-.linkweb,
-.accent {
+a {
   text-decoration: none;
 }
 ul {
@@ -94,7 +81,13 @@ ul {
 .first-section {
   background: var(--navy-blue);
 }
-h1 {
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+.hero-tittle {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 56px;
@@ -103,7 +96,7 @@ h1 {
   text-align: center;
   color: var(--white);
 }
-button {
+.first-button {
   cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--iris);
@@ -115,11 +108,11 @@ button {
   letter-spacing: 0.04em;
   color: var(--white);
 }
-button:hover,
-button:focus {
+.first-button:hover,
+.first-button:focus {
   background-color: var(--ocean);
 }
-h2 {
+.section-tittle {
   font-weight: 500;
   font-size: 20px;
 
@@ -128,7 +121,7 @@ h2 {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
 }
-p {
+.card-text {
   font-weight: 400;
   font-size: 16px;
 
@@ -137,7 +130,7 @@ p {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
-.htwoplus {
+.team-tittle {
   font-weight: 700;
   font-size: 36px;
 
@@ -147,17 +140,21 @@ p {
   text-align: center;
   color: var(--navy-blue);
 }
-.second-section {
-  background: var(--cloud);
-}
-.ulplus {
+.team-cart {
+  background-color: var(--white);
   box-shadow:
-    0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: var(--white);
+    0 2px 1px rgba(46, 47, 66, 0.08),
+    0 1px 1px rgba(46, 47, 66, 0.16),
+    0 1px 6px rgba(46, 47, 66, 0.08);
 }
-h3 {
+.team-section {
+  background-color: var(--cloud);
+}
+.team-list {
+  box-shadow: none;
+  background: transparent;
+}
+.cart-tittle {
   font-weight: 500;
   font-size: 20px;
 
@@ -166,7 +163,7 @@ h3 {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
 }
-.hpplus {
+.team-text {
   text-align: center;
 }
 .portfolio {
@@ -186,6 +183,7 @@ footer {
   color: var(--cloud);
 }
 .linkwebfooter {
+  font-family: var(--second-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16667;

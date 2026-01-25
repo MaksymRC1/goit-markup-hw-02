@@ -87,7 +87,7 @@ h3,
 p {
   margin: 0;
 }
-.hero-tittle {
+.hero-title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 56px;
@@ -112,7 +112,7 @@ p {
 .first-button:focus {
   background-color: var(--ocean);
 }
-.section-tittle {
+.section-title {
   font-weight: 500;
   font-size: 20px;
 
@@ -130,11 +130,9 @@ p {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
-.team-tittle {
+.team-title {
   font-weight: 700;
   font-size: 36px;
-
-  /* line-height: 40px; */
   line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
@@ -154,7 +152,7 @@ p {
   box-shadow: none;
   background: transparent;
 }
-.cart-tittle {
+.card-title {
   font-weight: 500;
   font-size: 20px;
 
